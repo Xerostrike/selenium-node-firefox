@@ -11,9 +11,4 @@ RUN apt-get update -qqy \
     firefox \
   && rm -rf /var/lib/apt/lists/*
 
-#========================
-# Selenium Configuration
-#========================
-COPY config.json /opt/selenium/config.json
-
 USER seluser
